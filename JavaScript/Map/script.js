@@ -60,4 +60,79 @@ const pre = naams.map((pre) => {
 console.log(pre);
 
 
+// Multiply each element with its index
+
+const arr1 = [2, 4, 6];
+
+const mult = arr1.map((mult, index) => {
+    return mult * index;
+})
+console.log(mult);
+
+
+// Create full names from objects
+
+const people = [
+    { first: "Amit", last: "Sharma" },
+    { first: "Neha", last: "Singh" }
+];
+
+const fName = people.map((user) => {
+    return user.first + " " + user.last;
+})
+console.log(fName);
+
+
+// Convert boolean array to "Yes"/"No"
+
+const flags = [true, false, true];
+
+const bool = flags.map((bool) => {
+    return bool ? "Yes" : "No";
+})
+console.log(bool);
+
+
+// Extract ages from object array
+
+const users = [
+    { name: "Amit", age: 25 },
+    { name: "Neha", age: 30 }
+];
+
+const age = users.map((vay) => {
+    return vay.age;
+})
+
+console.log(age);
+
+// Wrap strings in <li> tags]
+
+const items = ["Pen", "Book"];
+
+const lst = items.map((list) => {
+    return `<li>${list}</li>`;
+})
+console.log(lst);
+
+
+// Get first letters of each string
+
+const words = ["Hello", "World"];
+
+const FLetter = words.map((fl) => {
+    // return fl.slice(0, 1);
+    return fl.charAt(0);
+})
+console.log(FLetter);
+
+
+// Format prices
+
+const prices = [100, 200];
+
+const paisa = prices.map((pisa) => {
+    return `Rs.${pisa}`;
+})
+console.log(paisa);
 

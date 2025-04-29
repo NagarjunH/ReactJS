@@ -7,6 +7,7 @@ import { Props } from "./Components/Props/Props";
 // import User from "./Components/Props/PropTypes";
 import Sard from "./Components/Props/ChildrenProp";
 import ConditionalRender from "./Components/Conditional Rendering/ConditionalRender";
+import Handle from "./Components/Event Handling/Handle";
 function App() {
   return (
     <>
@@ -32,7 +33,8 @@ function App() {
       </Sard> */}
 
       {/* Conditional Rendering */}
-      <ConditionalRender isLoggedIn={true}/>
+      {/* <ConditionalRender isLoggedIn={true}/> */}
+      <Handle />
     </>
   )
 }

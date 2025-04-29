@@ -4,6 +4,9 @@ import React from "react";
 import MainContent from "./Components/Component Reuse/Reuse";
 import { UserCard } from "./Components/Task 1/UserCard";
 import { Props } from "./Components/Props/Props";
+// import User from "./Components/Props/PropTypes";
+import Sard from "./Components/Props/ChildrenProp";
+import ConditionalRender from "./Components/Conditional Rendering/ConditionalRender";
 function App() {
   return (
     <>
@@ -18,7 +21,18 @@ function App() {
       {/* <Props name="Nagarjun" age={25} city="Nanded" /> */}
 
       {/* Abhi hum isme Default props dekh rahe hai to kuch pass nai kiya */}
-      <Props />
+      {/* <Props /> */}
+
+      {/* <User name= "Nagarjun" age = {25}/> */}
+
+      {/* This is for Children Props */}
+      {/* <Sard>
+        <h2>Hello from Inside Card !</h2>
+        <p>This is Nested Content</p>
+      </Sard> */}
+
+      {/* Conditional Rendering */}
+      <ConditionalRender isLoggedIn={true}/>
     </>
   )
 }

@@ -8,6 +8,10 @@ import { Props } from "./Components/Props/Props";
 import Sard from "./Components/Props/ChildrenProp";
 import ConditionalRender from "./Components/Conditional Rendering/ConditionalRender";
 import Handle from "./Components/Event Handling/Handle";
+import Counter from "./Components/State/Counter";
+import NameComponent, { EditableName } from "./Components/Hooks/useState Hook/String";
+import Taunter from "./Components/Hooks/useState Hook/Number";
+import ToggleMessage from "./Components/Hooks/useState Hook/Boolean";
 function App() {
   return (
     <>
@@ -34,7 +38,21 @@ function App() {
 
       {/* Conditional Rendering */}
       {/* <ConditionalRender isLoggedIn={true}/> */}
-      <Handle />
+      {/* <Handle /> */}
+
+      {/* State In React Ke sath Examples */}
+      {/* <Counter /> */}
+
+      {/* Hooks ka Practice */}
+
+      {/* <NameComponent /> */}
+
+      {/* <EditableName /> */}
+
+      {/* <Taunter /> */}
+
+      <ToggleMessage />
+
     </>
   )
 }
